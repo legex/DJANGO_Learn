@@ -1,0 +1,5 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h1>Alert! Alert! your certificates are expiring in {{ days_left }} days from today, next alert will be {{ final_alert }} days from now, please renew ASAP!!</h1>
+{% endblock content%}
