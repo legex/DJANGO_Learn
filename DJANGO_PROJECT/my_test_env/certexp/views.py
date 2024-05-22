@@ -20,7 +20,7 @@ def certcheck(request):
             final_alert=certificate_decode(server)- alert_needed_on
             return render(request, 'certexp/certificate.html', {'days_left':time_delta.days,'final_alert':final_alert.days})
         elif operation=='UCM':
-            SERVER = '172.26.200.120'
+            SERVER = 'FQDN/IP'
             service=form.cleaned_data['service']
             url = f'https://{SERVER}/platformcom/api/v1/certmgr/config/identity/certificate?service={service}'
             time_delta= certificate_decode(server) - datetime.date.today()
