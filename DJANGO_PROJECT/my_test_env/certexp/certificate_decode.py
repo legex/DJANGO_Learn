@@ -21,7 +21,7 @@ def certificate_decode(api_path):
     if "platformcom" in api_path:
         #username = input("enter username:")
         #password = input("enter password:")
-        login_cred = 'administrator:n8tjacKer!'
+        login_cred = 'user:password'
         headers = {
         'Authorization': f'Basic {encode_to_base64(login_cred)}'
         }
